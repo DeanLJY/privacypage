@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — SideMind AI</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --fg: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #0369a1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --fg: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #38bdf8;
+      }
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      background: var(--bg);
+      color: var(--fg);
+    }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--accent); }
+    .note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding: 0.75rem 1rem;
+      border-left: 3px solid var(--accent);
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+      margin: 1.5rem 0;
+    }
+    code { font-size: 0.88em; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta"><strong>SideMind AI — Browsing Assistant</strong><br />Last updated: May 7, 2026</p>
+
+  <p>
+    This policy describes how the SideMind AI Chrome extension (“<strong>Extension</strong>”) handles information when you install and use it.
+    <!-- TODO: Replace with your legal entity or display name -->
+    It is published by <strong>[Your name or company]</strong> (“<strong>we</strong>”, “<strong>us</strong>”).
+  </p>
+
+  <div class="note">
+    <strong>Summary:</strong> We do not operate a hosted AI backend for your chats. API keys and most settings stay on your device.
+    When you use AI features, your browser sends requests directly to the third-party AI providers you configure. Those providers process data under their own policies.
+  </div>
+
+  <h2>1. What the Extension does</h2>
+  <p>
+    SideMind AI provides (a) a Chrome side panel for conversational AI and image generation, and (b) an optional floating toolbar on webpages when you select text,
+    for actions such as explanation, summarization, translation, and read-aloud (text-to-speech). You supply your own API credentials for supported vendors.
+  </p>
+
+  <h2>2. Data stored on your device</h2>
+  <p>The Extension may store the following locally in your browser profile using Chrome extension storage APIs (for example <code>chrome.storage.local</code>):</p>
+  <ul>
+    <li>API keys and authentication-related settings you enter in the Extension options.</li>
+    <li>Extension preferences (for example interface language, appearance, floating toolbar settings, pinned shortcuts, translation defaults, TTS provider options).</li>
+  </ul>
+  <p>
+    Short-lived data needed to pass a quick action from a webpage into the side panel may be held in <code>chrome.storage.session</code> and cleared when the browser session ends.
+    We do not receive a copy of this locally stored data on our servers, because <strong>we do not operate ingestion servers for the Extension’s core functionality</strong>.
+  </p>
+
+  <h2>3. Data sent to third-party AI services</h2>
+  <p>
+    When you actively use features (chat, image generation, floating actions, or TTS), the Extension sends requests from your browser to the AI or speech APIs you configured
+    (for example OpenAI, Anthropic, Google Gemini, Azure OpenAI, or others supported by the Extension). Those requests may include:
+  </p>
+  <ul>
+    <li>Prompts, messages, or selected text you chose to send.</li>
+    <li>Parameters required by the provider’s API (such as model identifiers).</li>
+    <li>Authorization headers derived from API keys you provided.</li>
+  </ul>
+  <p>
+    Those providers are independent controllers of your information. Please review each provider’s privacy policy, terms, and regional availability.
+    We are not responsible for how third parties store, log, or process API traffic.
+  </p>
+
+  <h2>4. Website content and permissions</h2>
+  <p>
+    The Extension injects a content script on ordinary webpages so the floating toolbar can appear when you select text.
+    It does not sell your browsing history. Processing is tied to actions you initiate (for example selecting text and choosing a command).
+  </p>
+
+  <h2>5. Children</h2>
+  <p>The Extension is not directed at children under 13 (or the minimum age required in your jurisdiction). Do not use it if you are not legally able to agree to this policy and to third-party terms.</p>
+
+  <h2>6. Changes</h2>
+  <p>We may update this policy when the Extension or legal requirements change. The “Last updated” date at the top will be revised accordingly.</p>
+
+  <h2>7. Contact</h2>
+  <p>
+    <!-- TODO: Replace with your contact -->
+    Questions about this policy: <strong>[your-email@example.com]</strong> or <strong>[contact URL]</strong>.
+  </p>
+</body>
+</html>
